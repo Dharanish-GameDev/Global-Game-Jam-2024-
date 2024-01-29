@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MainMenu/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 37355834d958ee44a8e78d1c27731645
   - enabled: 1
-    path: Assets/Scenes/GroundFloor.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Dream.unity
+    guid: f06be54367fa0af40bdf7c0d2375c606
+  - enabled: 1
+    path: Assets/Scenes/Hostel.unity
+    guid: 9e978c434c704ea4fa65e7265ce2acc8
   - enabled: 1
     path: Assets/Scenes/Road.unity
     guid: 4d8969b8a45e0f9489283d108c83d089
+  - enabled: 1
+    path: Assets/Scenes/GroundFloor.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/FirstFloor.unity
     guid: 9e549ea6ab0bc234b83aadc62e21c0e7
   - enabled: 1
     path: Assets/Scenes/ClassRoom.unity
     guid: eaa06ef4cc483a743909a8b1f20ca0fd
-  - enabled: 1
-    path: Assets/Scenes/Hostel.unity
-    guid: 9e978c434c704ea4fa65e7265ce2acc8
-  - enabled: 1
-    path: Assets/Scenes/Dream.unity
-    guid: f06be54367fa0af40bdf7c0d2375c606
   m_configObjects: {}

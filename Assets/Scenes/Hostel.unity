@@ -270,6 +270,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3843554532226193195, guid: ae14e40ac2ecbad4b852532f7605f650, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5474667950630479720, guid: ae14e40ac2ecbad4b852532f7605f650, type: 3}
       propertyPath: m_Name
       value: GamingTimelineCutscene
@@ -347,6 +351,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7178014579063480487, guid: a80f31275b85dcb45a8de9e78db7bd5d, type: 2}
     - target: {fileID: 8764600447374671251, guid: ae14e40ac2ecbad4b852532f7605f650, type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].key
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764600447374671251, guid: ae14e40ac2ecbad4b852532f7605f650, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
       objectReference: {fileID: 239906583}
@@ -374,6 +382,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[8].value
       value: 
       objectReference: {fileID: 817188047}
+    - target: {fileID: 8764600447374671251, guid: ae14e40ac2ecbad4b852532f7605f650, type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].value
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -513,7 +525,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: dialogues.Array.data[0].dialouge
-      value: Let's play some f*ucking games.
+      value: Today Sunday so let's play some games to chill this day. Press 'A' &
+        'D' or arrow keys for movement and Press 'E' key for interact.
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_Pivot.x
@@ -525,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.y
@@ -541,7 +554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.y
@@ -577,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1076,6 +1089,7 @@ MonoBehaviour:
   - {fileID: 1954956650}
   - {fileID: 1152571377}
   playerRestricter: {fileID: 2134526663}
+  bgAudioSrc: {fileID: 496021098}
 --- !u!61 &458658156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1136,6 +1150,134 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2352820185101059647, guid: 28db04b2789562c4c89c696b37720dad, type: 3}
   m_PrefabInstance: {fileID: 1557550658}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &496021098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496021100}
+  - component: {fileID: 496021099}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &496021099
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496021098}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fb78c9cf90b3cbc4987632255d19d8c9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &496021100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496021098}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 770.6451, y: 434.56116, z: -6.876954}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &567915935
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,6 +2157,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
+      propertyPath: nextDialogueTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: dialogues.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2024,7 +2170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: dialogues.Array.data[0].dialouge
-      value: I guess I should call is as a day. Let's go to bed.
+      value: This day is not for me. I can't play anymore. Let's go to bed.
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_Pivot.x
@@ -2036,7 +2182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2052,7 +2198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2088,7 +2234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2293,6 +2439,7 @@ MonoBehaviour:
   - {fileID: 918325395}
   - {fileID: 479835909}
   playerRestricter: {fileID: 2134526663}
+  bgAudioSrc: {fileID: 496021098}
 --- !u!1 &1216795085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6819459948295346350, guid: 28db04b2789562c4c89c696b37720dad, type: 3}
@@ -2925,6 +3072,7 @@ MonoBehaviour:
   gamingDeskInteractable: {fileID: 458658155}
   bedBoxCollider: {fileID: 1211544209}
   bedDialogue: {fileID: 1071830775}
+  bgAudioSrc: {fileID: 496021098}
 --- !u!1001 &1557550658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3760,6 +3908,7 @@ MonoBehaviour:
   playerCameraController: {fileID: 0}
   canvasObject: {fileID: 0}
   ShadowColor: {r: 0, g: 0, b: 0, a: 0.5882353}
+  liftDialogue: {fileID: 0}
 --- !u!4 &2134526664
 Transform:
   m_ObjectHideFlags: 0
@@ -3792,3 +3941,4 @@ SceneRoots:
   - {fileID: 1591588284}
   - {fileID: 1826913429}
   - {fileID: 446445706}
+  - {fileID: 496021100}

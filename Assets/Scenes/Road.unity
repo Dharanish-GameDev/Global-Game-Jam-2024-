@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 163047424}
     m_Modifications:
     - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
+      propertyPath: isGetInput
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: nextDialogueTime
       value: 1
       objectReference: {fileID: 0}
@@ -145,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2757151383064353769, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: dialogues.Array.data[0].dialouge
-      value: Who's football was that?
+      value: Is this dog or a football? The World is always mystery.
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_Pivot.x
@@ -157,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.y
@@ -173,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.y
@@ -209,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3290,7 +3294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchorMax.y
@@ -3306,7 +3310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3342,7 +3346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584719163193445085, guid: 61f1b067481fcf340bc1a72f65a8caff, type: 3}
       propertyPath: m_AnchoredPosition.y

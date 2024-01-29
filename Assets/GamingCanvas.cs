@@ -8,6 +8,7 @@ public class GamingCanvas : MonoBehaviour
     [SerializeField] private GamingDeskInteractable gamingDeskInteractable;
     [SerializeField] private BoxCollider2D bedBoxCollider;
     [SerializeField] private GameObject bedDialogue;
+    [SerializeField] private GameObject bgAudioSrc;
 
     public void DisableCanvas()
     {
@@ -19,6 +20,7 @@ public class GamingCanvas : MonoBehaviour
         Destroy(gamingDeskInteractable);
         bedBoxCollider.enabled = true;
         bedDialogue.SetActive(true);
+        bgAudioSrc.SetActive(true);
     }
 
 

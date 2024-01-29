@@ -8,10 +8,14 @@ public class SecondTimeFirstFloor : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private CameraController cameraController;
     [SerializeField] private Door classDoor;
+
+    [SerializeField] private GameObject introDialogue;
+
     void Start()
     {
         if(GameManager.instance.isSystemOperated)
         {
+            introDialogue.SetActive(false);
             playerTransform.position = classExitPoint.position;
             cameraController.RemoveFirstCamMultipleEnd();
             Destroy(classDoor);

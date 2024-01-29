@@ -4,22 +4,49 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    private float timer;
     [SerializeField] private Transform BG;
     [SerializeField] private Transform BaseImage;
     [SerializeField] private Transform ComputerBorder;
     [SerializeField] private InteractablePC PC;
     [SerializeField] private GameObject PortalToFloor;
-    private void OnEnable()
+
+    [SerializeField] private GameObject tryagainDialogue, forgetpassDialogue;
+    [SerializeField] private GameObject crashedDialogue;
+
+    private int submitbtnCount;
+    private int refreshCount;
+
+    private void Awake()
     {
-        timer = 10; 
+        submitbtnCount = 0;
+        refreshCount = 0;
     }
 
-    private void Update()
+    public void SubmitBtn()
     {
-        timer-=Time.deltaTime;
+        if (submitbtnCount >= 2) return;
 
-        if(timer <= 0)
+        submitbtnCount++;
+
+        if (submitbtnCount == 1)
+        {
+            tryagainDialogue.SetActive(true);
+            forgetpassDialogue.SetActive(false);
+        }
+        else if (submitbtnCount == 2)
+        {
+            tryagainDialogue.SetActive(false);
+            forgetpassDialogue.SetActive(true);
+        }
+    }
+
+    public void RefreshBtn()
+    {
+        if (refreshCount >= 5) return;
+
+        refreshCount++;
+
+        if (refreshCount >= 5)
         {
             BG.gameObject.SetActive(false);
             BaseImage.gameObject.SetActive(false);
@@ -29,7 +56,7 @@ public class Timer : MonoBehaviour
             Destroy(PC);
             PortalToFloor.SetActive(true);
             gameObject.SetActive(false);
-
+            crashedDialogue.SetActive(true);
         }
     }
 }
